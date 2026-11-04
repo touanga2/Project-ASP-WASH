@@ -1,0 +1,654 @@
+{
+  "version": 9,
+  "structuredDefaults": "inherited",
+  "anchors": {
+    "aspWash": {
+      "cv": {
+        "layout": {
+          "aspWash::__cv_subject__::subject:robot|aspWash::parts::AspWashRA1": {
+            "x": 8,
+            "y": 24,
+            "parentKey": null,
+            "w": 573,
+            "h": 926
+          },
+          "aspWash::useCases::choisirModeNettoyage": {
+            "x": 281,
+            "y": 422,
+            "parentKey": null,
+            "w": 223,
+            "h": 60
+          },
+          "aspWash::useCases::signalerDechetInhabituel": {
+            "x": 281,
+            "y": 506,
+            "parentKey": null,
+            "w": 262,
+            "h": 60
+          },
+          "aspWash::useCases::ralentirContournerArreter": {
+            "x": 281,
+            "y": 590,
+            "parentKey": null,
+            "w": 272,
+            "h": 60
+          },
+          "aspWash::useCases::deployerRecupererSatellite": {
+            "x": 281,
+            "y": 674,
+            "parentKey": null,
+            "w": 283,
+            "h": 60
+          },
+          "aspWash::useCases::localiserIncident": {
+            "x": 281,
+            "y": 758,
+            "parentKey": null,
+            "w": 193,
+            "h": 60
+          },
+          "aspWash::useCases::reconnaitreDechets": {
+            "x": 295,
+            "y": 40,
+            "parentKey": "aspWash::__cv_subject__::subject:robot|aspWash::parts::AspWashRA1",
+            "w": 262,
+            "h": 60
+          },
+          "aspWash::useCases::detecterObstaclesUsagers": {
+            "x": 16,
+            "y": 850,
+            "parentKey": "aspWash::__cv_subject__::subject:robot|aspWash::parts::AspWashRA1",
+            "w": 262,
+            "h": 60
+          },
+          "aspWash::useCases::nettoyerZoneInaccessible": {
+            "x": 295,
+            "y": 124,
+            "parentKey": "aspWash::__cv_subject__::subject:robot|aspWash::parts::AspWashRA1",
+            "w": 262,
+            "h": 60
+          },
+          "aspWash::useCases::alarmeInterventionSol": {
+            "x": 295,
+            "y": 292,
+            "parentKey": "aspWash::__cv_subject__::subject:robot|aspWash::parts::AspWashRA1",
+            "w": 262,
+            "h": 60
+          },
+          "aspWash::__cv_actor__::actor:responsableProduction|": {
+            "x": -169.69750033338752,
+            "y": 724.1293253782015,
+            "parentKey": null,
+            "w": 162,
+            "h": 96
+          },
+          "aspWash::__cv_actor__::actor:operateurUsager|": {
+            "x": 24,
+            "y": 1146,
+            "parentKey": null,
+            "w": 120,
+            "h": 96
+          },
+          "aspWash::__cv_actor__::actor:responsableMaintenance|": {
+            "x": 24,
+            "y": 1298,
+            "parentKey": null,
+            "w": 169,
+            "h": 96
+          },
+          "aspWash::__cv_actor__::actor:reseauAlerte|": {
+            "x": 24,
+            "y": 1450,
+            "parentKey": null,
+            "w": 99,
+            "h": 96
+          }
+        },
+        "ports": {},
+        "edgeRoutes": {},
+        "edgeAnchors": {},
+        "edgeGeometry": {
+          "association:aspWash::__cv_actor__::actor:responsableProduction|->aspWash::useCases::reconnaitreDechets": {
+            "sourceHandle": "right",
+            "targetHandle": "left",
+            "path": "M -70.698,760.129 L -60.698,760.129 Q -52.698,760.129 -52.698,752.129 L -52.698,102 Q -52.698,94 -44.698,94 L 303,94",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": -70.69750033338752,
+              "y": 760.1293253782015
+            },
+            "targetPoint": {
+              "x": 303,
+              "y": 94
+            },
+            "label": {
+              "x": -52.697500333387524,
+              "y": 258.215912522407
+            },
+            "points": [
+              {
+                "x": -70.69750033338752,
+                "y": 760.1293253782015
+              },
+              {
+                "x": -52.697500333387524,
+                "y": 760.1293253782015
+              },
+              {
+                "x": -52.697500333387524,
+                "y": 94
+              },
+              {
+                "x": 303,
+                "y": 94
+              }
+            ],
+            "corner": 8
+          },
+          "association:aspWash::__cv_actor__::actor:operateurUsager|->aspWash::useCases::detecterObstaclesUsagers": {
+            "sourceHandle": "top",
+            "targetHandle": "bottom",
+            "path": "M 84,1147 L 84,1137 Q 84,1129 92,1129 L 147,1129 Q 155,1129 155,1121 L 155,934",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 84,
+              "y": 1147
+            },
+            "targetPoint": {
+              "x": 155,
+              "y": 934
+            },
+            "label": {
+              "x": 155,
+              "y": 1076
+            },
+            "points": [
+              {
+                "x": 84,
+                "y": 1147
+              },
+              {
+                "x": 84,
+                "y": 1129
+              },
+              {
+                "x": 155,
+                "y": 1129
+              },
+              {
+                "x": 155,
+                "y": 934
+              }
+            ],
+            "corner": 8
+          },
+          "association:aspWash::__cv_actor__::actor:responsableProduction|->aspWash::useCases::nettoyerZoneInaccessible": {
+            "sourceHandle": "right",
+            "targetHandle": "left",
+            "path": "M -70.698,760.129 L -60.698,760.129 Q -52.698,760.129 -52.698,752.129 L -52.698,186 Q -52.698,178 -44.698,178 L 303,178",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": -70.69750033338752,
+              "y": 760.1293253782015
+            },
+            "targetPoint": {
+              "x": 303,
+              "y": 178
+            },
+            "label": {
+              "x": -52.697500333387524,
+              "y": 300.215912522407
+            },
+            "points": [
+              {
+                "x": -70.69750033338752,
+                "y": 760.1293253782015
+              },
+              {
+                "x": -52.697500333387524,
+                "y": 760.1293253782015
+              },
+              {
+                "x": -52.697500333387524,
+                "y": 178
+              },
+              {
+                "x": 303,
+                "y": 178
+              }
+            ],
+            "corner": 8
+          },
+          "association:aspWash::__cv_actor__::actor:responsableMaintenance|->aspWash::useCases::alarmeInterventionSol": {
+            "sourceHandle": "right",
+            "targetHandle": "left:0.250",
+            "path": "M 126.5,1334 L 136.5,1334 Q 144.5,1334 144.5,1326 L 144.5,956 Q 144.5,948 136.5,948 L 18,948 Q 10,948 10,940 L 10,868 Q 10,860 18,860 L 136.5,860 Q 144.5,860 144.5,852 L 144.5,339 Q 144.5,331 152.5,331 L 320.551,331",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 126.5,
+              "y": 1334
+            },
+            "targetPoint": {
+              "x": 320.5506721042385,
+              "y": 331
+            },
+            "label": {
+              "x": 116.5253360521192,
+              "y": 860
+            },
+            "points": [
+              {
+                "x": 126.5,
+                "y": 1334
+              },
+              {
+                "x": 144.5,
+                "y": 1334
+              },
+              {
+                "x": 144.5,
+                "y": 948
+              },
+              {
+                "x": 10,
+                "y": 948
+              },
+              {
+                "x": 10,
+                "y": 860
+              },
+              {
+                "x": 144.5,
+                "y": 860
+              },
+              {
+                "x": 144.5,
+                "y": 331
+              },
+              {
+                "x": 320.5506721042385,
+                "y": 331
+              }
+            ],
+            "corner": 8
+          },
+          "association:aspWash::__cv_actor__::actor:reseauAlerte|->aspWash::useCases::alarmeInterventionSol": {
+            "sourceHandle": "right",
+            "targetHandle": "left",
+            "path": "M 91.5,1486 L 189.25,1486 Q 197.25,1486 197.25,1478 L 197.25,956 Q 197.25,948 205.25,948 L 292,948 Q 300,948 300,940 L 300,868 Q 300,860 292,860 L 205.25,860 Q 197.25,860 197.25,852 L 197.25,354 Q 197.25,346 205.25,346 L 303,346",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 91.5,
+              "y": 1486
+            },
+            "targetPoint": {
+              "x": 303,
+              "y": 346
+            },
+            "label": {
+              "x": 300,
+              "y": 916
+            },
+            "points": [
+              {
+                "x": 91.5,
+                "y": 1486
+              },
+              {
+                "x": 197.25,
+                "y": 1486
+              },
+              {
+                "x": 197.25,
+                "y": 948
+              },
+              {
+                "x": 300,
+                "y": 948
+              },
+              {
+                "x": 300,
+                "y": 860
+              },
+              {
+                "x": 197.25,
+                "y": 860
+              },
+              {
+                "x": 197.25,
+                "y": 346
+              },
+              {
+                "x": 303,
+                "y": 346
+              }
+            ],
+            "corner": 8
+          },
+          "include:aspWash::useCases::reconnaitreDechets->aspWash::useCases::choisirModeNettoyage:«include»": {
+            "caption": {
+              "x": 489.9731848090347,
+              "y": 395,
+              "width": 76,
+              "height": 18,
+              "lines": [
+                "«include»"
+              ],
+              "text": "«include»",
+              "source": {
+                "x": 401.25,
+                "y": 123.04737509655563
+              },
+              "target": {
+                "x": 392.5,
+                "y": 422
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom:0.375",
+            "targetHandle": "top",
+            "path": "M 401.25,123.047 L 401.25,127.547 Q 401.25,132.047 405.75,132.047 L 587,132.047 Q 595,132.047 595,140.047 L 595,396 Q 595,404 587,404 L 400.5,404 Q 392.5,404 392.5,412 L 392.5,422",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 401.25,
+              "y": 123.04737509655563
+            },
+            "targetPoint": {
+              "x": 392.5,
+              "y": 422
+            },
+            "label": {
+              "x": 595,
+              "y": 276.8986875482778
+            },
+            "points": [
+              {
+                "x": 401.25,
+                "y": 123.04737509655563
+              },
+              {
+                "x": 401.25,
+                "y": 132.04737509655564
+              },
+              {
+                "x": 595,
+                "y": 132.04737509655564
+              },
+              {
+                "x": 595,
+                "y": 404
+              },
+              {
+                "x": 392.5,
+                "y": 404
+              },
+              {
+                "x": 392.5,
+                "y": 422
+              }
+            ],
+            "corner": 8
+          },
+          "include:aspWash::useCases::reconnaitreDechets->aspWash::useCases::signalerDechetInhabituel:«include»": {
+            "caption": {
+              "x": 581,
+              "y": 416.5103019457106,
+              "width": 76,
+              "height": 18,
+              "lines": [
+                "«include»"
+              ],
+              "text": "«include»",
+              "source": {
+                "x": 466.75,
+                "y": 123.04737509655563
+              },
+              "target": {
+                "x": 412,
+                "y": 506
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom:0.625",
+            "targetHandle": "top",
+            "path": "M 466.75,123.047 L 466.75,127.547 Q 466.75,132.047 471.25,132.047 L 611,132.047 Q 619,132.047 619,140.047 L 619,489 Q 619,497 611,497 L 416.5,497 Q 412,497 412,501.5 L 412,506",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 466.75,
+              "y": 123.04737509655563
+            },
+            "targetPoint": {
+              "x": 412,
+              "y": 506
+            },
+            "label": {
+              "x": 619,
+              "y": 341.8986875482778
+            },
+            "points": [
+              {
+                "x": 466.75,
+                "y": 123.04737509655563
+              },
+              {
+                "x": 466.75,
+                "y": 132.04737509655564
+              },
+              {
+                "x": 619,
+                "y": 132.04737509655564
+              },
+              {
+                "x": 619,
+                "y": 497
+              },
+              {
+                "x": 412,
+                "y": 497
+              },
+              {
+                "x": 412,
+                "y": 506
+              }
+            ],
+            "corner": 8
+          },
+          "include:aspWash::useCases::detecterObstaclesUsagers->aspWash::useCases::ralentirContournerArreter:«include»": {
+            "caption": {
+              "x": 271.0165132452548,
+              "y": 650,
+              "width": 76,
+              "height": 18,
+              "lines": [
+                "«include»"
+              ],
+              "text": "«include»",
+              "source": {
+                "x": 155,
+                "y": 874
+              },
+              "target": {
+                "x": 417,
+                "y": 650
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "top",
+            "targetHandle": "bottom",
+            "path": "M 155,874 L 155,667 Q 155,659 163,659 L 412.5,659 Q 417,659 417,654.5 L 417,650",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 155,
+              "y": 874
+            },
+            "targetPoint": {
+              "x": 417,
+              "y": 650
+            },
+            "label": {
+              "x": 183,
+              "y": 659
+            },
+            "points": [
+              {
+                "x": 155,
+                "y": 874
+              },
+              {
+                "x": 155,
+                "y": 659
+              },
+              {
+                "x": 417,
+                "y": 659
+              },
+              {
+                "x": 417,
+                "y": 650
+              }
+            ],
+            "corner": 8
+          },
+          "include:aspWash::useCases::nettoyerZoneInaccessible->aspWash::useCases::deployerRecupererSatellite:«include»": {
+            "caption": {
+              "x": 491.95046026423574,
+              "y": 656,
+              "width": 76,
+              "height": 18,
+              "lines": [
+                "«include»"
+              ],
+              "text": "«include»",
+              "source": {
+                "x": 434,
+                "y": 208
+              },
+              "target": {
+                "x": 422.5,
+                "y": 674
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 434,208 L 434,218 Q 434,226 442,226 L 571,226 Q 579,226 579,234 L 579,657 Q 579,665 571,665 L 427,665 Q 422.5,665 422.5,669.5 L 422.5,674",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 434,
+              "y": 208
+            },
+            "targetPoint": {
+              "x": 422.5,
+              "y": 674
+            },
+            "label": {
+              "x": 579,
+              "y": 446.75
+            },
+            "points": [
+              {
+                "x": 434,
+                "y": 208
+              },
+              {
+                "x": 434,
+                "y": 226
+              },
+              {
+                "x": 579,
+                "y": 226
+              },
+              {
+                "x": 579,
+                "y": 665
+              },
+              {
+                "x": 422.5,
+                "y": 665
+              },
+              {
+                "x": 422.5,
+                "y": 674
+              }
+            ],
+            "corner": 8
+          },
+          "include:aspWash::useCases::alarmeInterventionSol->aspWash::useCases::localiserIncident:«include»": {
+            "caption": {
+              "x": 229.03477905072629,
+              "y": 392.0338697946616,
+              "width": 76,
+              "height": 18,
+              "lines": [
+                "«include»"
+              ],
+              "text": "«include»",
+              "source": {
+                "x": 434,
+                "y": 376
+              },
+              "target": {
+                "x": 377.5,
+                "y": 758
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "bottom",
+            "targetHandle": "top",
+            "path": "M 434,376 L 434,386 Q 434,394 426,394 L 275,394 Q 267,394 267,402 L 267,741 Q 267,749 275,749 L 373,749 Q 377.5,749 377.5,753.5 L 377.5,758",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 434,
+              "y": 376
+            },
+            "targetPoint": {
+              "x": 377.5,
+              "y": 758
+            },
+            "label": {
+              "x": 267,
+              "y": 538.75
+            },
+            "points": [
+              {
+                "x": 434,
+                "y": 376
+              },
+              {
+                "x": 434,
+                "y": 394
+              },
+              {
+                "x": 267,
+                "y": 394
+              },
+              {
+                "x": 267,
+                "y": 749
+              },
+              {
+                "x": 377.5,
+                "y": 749
+              },
+              {
+                "x": 377.5,
+                "y": 758
+              }
+            ],
+            "corner": 8
+          }
+        }
+      }
+    }
+  }
+}
