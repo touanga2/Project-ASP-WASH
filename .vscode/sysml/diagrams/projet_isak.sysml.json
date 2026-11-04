@@ -1,0 +1,72 @@
+{
+  "version": 9,
+  "structuredDefaults": "inherited",
+  "anchors": {
+    "aspwash::Contexte": {
+      "sv": {
+        "layout": {
+          "aspwash::Contexte::robot": {
+            "x": 20,
+            "y": 0,
+            "parentKey": null,
+            "w": 171,
+            "h": 200
+          },
+          "aspwash::Contexte::responsableMaintenance": {
+            "x": 261,
+            "y": 0,
+            "parentKey": null,
+            "w": 341,
+            "h": 200
+          },
+          "aspwash::Contexte::responsableProduction": {
+            "x": 698,
+            "y": 0,
+            "parentKey": null,
+            "w": 327,
+            "h": 200
+          },
+          "aspwash::Contexte::operateursUsagers": {
+            "x": 1069,
+            "y": 0,
+            "parentKey": null,
+            "w": 259,
+            "h": 200
+          },
+          "aspwash::Contexte::chariotsElevateurs": {
+            "x": 1398,
+            "y": 0,
+            "parentKey": null,
+            "w": 273,
+            "h": 200
+          },
+          "aspwash::Contexte::zoneANettoyer": {
+            "x": 1741,
+            "y": 0,
+            "parentKey": null,
+            "w": 218,
+            "h": 200
+          },
+          "aspwash::Contexte::solEtDechet": {
+            "x": 2029,
+            "y": 0,
+            "parentKey": null,
+            "w": 191,
+            "h": 200
+          },
+          "aspwash::Contexte::reseauAlerte": {
+            "x": 2290,
+            "y": 0,
+            "parentKey": null,
+            "w": 232,
+            "h": 200
+          }
+        },
+        "ports": {},
+        "edgeRoutes": {},
+        "edgeAnchors": {},
+        "edgeGeometry": {}
+      }
+    }
+  }
+}

@@ -48,57 +48,57 @@
             "h": 60
           },
           "aspWash::useCases::reconnaitreDechets": {
-            "x": 295,
-            "y": 40,
-            "parentKey": "aspWash::__cv_subject__::subject:robot|aspWash::parts::AspWashRA1",
+            "x": 529.7904221640908,
+            "y": 673.4477162882297,
+            "parentKey": null,
             "w": 262,
             "h": 60
           },
           "aspWash::useCases::detecterObstaclesUsagers": {
-            "x": 16,
-            "y": 850,
-            "parentKey": "aspWash::__cv_subject__::subject:robot|aspWash::parts::AspWashRA1",
+            "x": 518.8154665398347,
+            "y": 984.5087875272299,
+            "parentKey": null,
             "w": 262,
             "h": 60
           },
           "aspWash::useCases::nettoyerZoneInaccessible": {
-            "x": 295,
-            "y": 124,
-            "parentKey": "aspWash::__cv_subject__::subject:robot|aspWash::parts::AspWashRA1",
+            "x": 526.3765377788345,
+            "y": 777.356766226872,
+            "parentKey": null,
             "w": 262,
             "h": 60
           },
           "aspWash::useCases::alarmeInterventionSol": {
-            "x": 295,
-            "y": 292,
-            "parentKey": "aspWash::__cv_subject__::subject:robot|aspWash::parts::AspWashRA1",
+            "x": 523.1928826102264,
+            "y": 875.9661696342463,
+            "parentKey": null,
             "w": 262,
             "h": 60
           },
           "aspWash::__cv_actor__::actor:responsableProduction|": {
-            "x": -169.69750033338752,
-            "y": 724.1293253782015,
+            "x": 59.56699916340253,
+            "y": 715.882400935871,
             "parentKey": null,
             "w": 162,
             "h": 96
           },
           "aspWash::__cv_actor__::actor:operateurUsager|": {
-            "x": 24,
-            "y": 1146,
+            "x": 69.90379563276082,
+            "y": 1080.2698652810273,
             "parentKey": null,
             "w": 120,
             "h": 96
           },
           "aspWash::__cv_actor__::actor:responsableMaintenance|": {
-            "x": 24,
-            "y": 1298,
+            "x": 55.33831288085621,
+            "y": 804.8339183486315,
             "parentKey": null,
             "w": 169,
             "h": 96
           },
           "aspWash::__cv_actor__::actor:reseauAlerte|": {
-            "x": 24,
-            "y": 1450,
+            "x": 91.61252913847258,
+            "y": 923.5672393350187,
             "parentKey": null,
             "w": 99,
             "h": 96
@@ -111,36 +111,36 @@
           "association:aspWash::__cv_actor__::actor:responsableProduction|->aspWash::useCases::reconnaitreDechets": {
             "sourceHandle": "right",
             "targetHandle": "left",
-            "path": "M -70.698,760.129 L -60.698,760.129 Q -52.698,760.129 -52.698,752.129 L -52.698,102 Q -52.698,94 -44.698,94 L 303,94",
+            "path": "M 158.567,751.882 L 503.79,751.882 Q 511.79,751.882 511.79,743.882 L 511.79,711.448 Q 511.79,703.448 519.79,703.448 L 529.79,703.448",
             "lineStyle": "orthogonal",
             "sourcePoint": {
-              "x": -70.69750033338752,
-              "y": 760.1293253782015
+              "x": 158.56699916340253,
+              "y": 751.882400935871
             },
             "targetPoint": {
-              "x": 303,
-              "y": 94
+              "x": 529.7904221640908,
+              "y": 703.4477162882297
             },
             "label": {
-              "x": -52.697500333387524,
-              "y": 258.215912522407
+              "x": 368.3960529875674,
+              "y": 751.882400935871
             },
             "points": [
               {
-                "x": -70.69750033338752,
-                "y": 760.1293253782015
+                "x": 158.56699916340253,
+                "y": 751.882400935871
               },
               {
-                "x": -52.697500333387524,
-                "y": 760.1293253782015
+                "x": 511.79042216409084,
+                "y": 751.882400935871
               },
               {
-                "x": -52.697500333387524,
-                "y": 94
+                "x": 511.79042216409084,
+                "y": 703.4477162882297
               },
               {
-                "x": 303,
-                "y": 94
+                "x": 529.7904221640908,
+                "y": 703.4477162882297
               }
             ],
             "corner": 8
@@ -148,36 +148,36 @@
           "association:aspWash::__cv_actor__::actor:operateurUsager|->aspWash::useCases::detecterObstaclesUsagers": {
             "sourceHandle": "top",
             "targetHandle": "bottom",
-            "path": "M 84,1147 L 84,1137 Q 84,1129 92,1129 L 147,1129 Q 155,1129 155,1121 L 155,934",
+            "path": "M 129.904,1081.27 L 129.904,1070.509 Q 129.904,1062.509 137.904,1062.509 L 641.815,1062.509 Q 649.815,1062.509 649.815,1054.509 L 649.815,1044.509",
             "lineStyle": "orthogonal",
             "sourcePoint": {
-              "x": 84,
-              "y": 1147
+              "x": 129.90379563276082,
+              "y": 1081.2698652810273
             },
             "targetPoint": {
-              "x": 155,
-              "y": 934
+              "x": 649.8154665398347,
+              "y": 1044.5087875272297
             },
             "label": {
-              "x": 155,
-              "y": 1076
+              "x": 389.47909220939897,
+              "y": 1062.5087875272297
             },
             "points": [
               {
-                "x": 84,
-                "y": 1147
+                "x": 129.90379563276082,
+                "y": 1081.2698652810273
               },
               {
-                "x": 84,
-                "y": 1129
+                "x": 129.90379563276082,
+                "y": 1062.5087875272297
               },
               {
-                "x": 155,
-                "y": 1129
+                "x": 649.8154665398347,
+                "y": 1062.5087875272297
               },
               {
-                "x": 155,
-                "y": 934
+                "x": 649.8154665398347,
+                "y": 1044.5087875272297
               }
             ],
             "corner": 8
@@ -185,36 +185,36 @@
           "association:aspWash::__cv_actor__::actor:responsableProduction|->aspWash::useCases::nettoyerZoneInaccessible": {
             "sourceHandle": "right",
             "targetHandle": "left",
-            "path": "M -70.698,760.129 L -60.698,760.129 Q -52.698,760.129 -52.698,752.129 L -52.698,186 Q -52.698,178 -44.698,178 L 303,178",
+            "path": "M 158.567,751.882 L 500.377,751.882 Q 508.377,751.882 508.377,759.882 L 508.377,799.357 Q 508.377,807.357 516.377,807.357 L 526.377,807.357",
             "lineStyle": "orthogonal",
             "sourcePoint": {
-              "x": -70.69750033338752,
-              "y": 760.1293253782015
+              "x": 158.56699916340253,
+              "y": 751.882400935871
             },
             "targetPoint": {
-              "x": 303,
-              "y": 178
+              "x": 526.3765377788345,
+              "y": 807.356766226872
             },
             "label": {
-              "x": -52.697500333387524,
-              "y": 300.215912522407
+              "x": 370.208951116619,
+              "y": 751.882400935871
             },
             "points": [
               {
-                "x": -70.69750033338752,
-                "y": 760.1293253782015
+                "x": 158.56699916340253,
+                "y": 751.882400935871
               },
               {
-                "x": -52.697500333387524,
-                "y": 760.1293253782015
+                "x": 508.3765377788345,
+                "y": 751.882400935871
               },
               {
-                "x": -52.697500333387524,
-                "y": 178
+                "x": 508.3765377788345,
+                "y": 807.356766226872
               },
               {
-                "x": 303,
-                "y": 178
+                "x": 526.3765377788345,
+                "y": 807.356766226872
               }
             ],
             "corner": 8
@@ -222,52 +222,36 @@
           "association:aspWash::__cv_actor__::actor:responsableMaintenance|->aspWash::useCases::alarmeInterventionSol": {
             "sourceHandle": "right",
             "targetHandle": "left:0.250",
-            "path": "M 126.5,1334 L 136.5,1334 Q 144.5,1334 144.5,1326 L 144.5,956 Q 144.5,948 136.5,948 L 18,948 Q 10,948 10,940 L 10,868 Q 10,860 18,860 L 136.5,860 Q 144.5,860 144.5,852 L 144.5,339 Q 144.5,331 152.5,331 L 320.551,331",
+            "path": "M 157.838,840.834 L 167.838,840.834 Q 175.838,840.834 175.838,848.834 L 175.838,882.966 Q 175.838,890.966 183.838,890.966 L 540.744,890.966",
             "lineStyle": "orthogonal",
             "sourcePoint": {
-              "x": 126.5,
-              "y": 1334
+              "x": 157.83831288085622,
+              "y": 840.8339183486315
             },
             "targetPoint": {
-              "x": 320.5506721042385,
-              "y": 331
+              "x": 540.743554714465,
+              "y": 890.9661696342463
             },
             "label": {
-              "x": 116.5253360521192,
-              "y": 860
+              "x": 324.22480815485324,
+              "y": 890.9661696342463
             },
             "points": [
               {
-                "x": 126.5,
-                "y": 1334
+                "x": 157.83831288085622,
+                "y": 840.8339183486315
               },
               {
-                "x": 144.5,
-                "y": 1334
+                "x": 175.83831288085622,
+                "y": 840.8339183486315
               },
               {
-                "x": 144.5,
-                "y": 948
+                "x": 175.83831288085622,
+                "y": 890.9661696342463
               },
               {
-                "x": 10,
-                "y": 948
-              },
-              {
-                "x": 10,
-                "y": 860
-              },
-              {
-                "x": 144.5,
-                "y": 860
-              },
-              {
-                "x": 144.5,
-                "y": 331
-              },
-              {
-                "x": 320.5506721042385,
-                "y": 331
+                "x": 540.743554714465,
+                "y": 890.9661696342463
               }
             ],
             "corner": 8
@@ -275,52 +259,36 @@
           "association:aspWash::__cv_actor__::actor:reseauAlerte|->aspWash::useCases::alarmeInterventionSol": {
             "sourceHandle": "right",
             "targetHandle": "left",
-            "path": "M 91.5,1486 L 189.25,1486 Q 197.25,1486 197.25,1478 L 197.25,956 Q 197.25,948 205.25,948 L 292,948 Q 300,948 300,940 L 300,868 Q 300,860 292,860 L 205.25,860 Q 197.25,860 197.25,852 L 197.25,354 Q 197.25,346 205.25,346 L 303,346",
+            "path": "M 159.113,959.567 L 497.193,959.567 Q 505.193,959.567 505.193,951.567 L 505.193,913.966 Q 505.193,905.966 513.193,905.966 L 523.193,905.966",
             "lineStyle": "orthogonal",
             "sourcePoint": {
-              "x": 91.5,
-              "y": 1486
+              "x": 159.11252913847258,
+              "y": 959.5672393350187
             },
             "targetPoint": {
-              "x": 303,
-              "y": 346
+              "x": 523.1928826102264,
+              "y": 905.9661696342463
             },
             "label": {
-              "x": 300,
-              "y": 916
+              "x": 367.9532407247357,
+              "y": 959.5672393350187
             },
             "points": [
               {
-                "x": 91.5,
-                "y": 1486
+                "x": 159.11252913847258,
+                "y": 959.5672393350187
               },
               {
-                "x": 197.25,
-                "y": 1486
+                "x": 505.19288261022643,
+                "y": 959.5672393350187
               },
               {
-                "x": 197.25,
-                "y": 948
+                "x": 505.19288261022643,
+                "y": 905.9661696342463
               },
               {
-                "x": 300,
-                "y": 948
-              },
-              {
-                "x": 300,
-                "y": 860
-              },
-              {
-                "x": 197.25,
-                "y": 860
-              },
-              {
-                "x": 197.25,
-                "y": 346
-              },
-              {
-                "x": 303,
-                "y": 346
+                "x": 523.1928826102264,
+                "y": 905.9661696342463
               }
             ],
             "corner": 8
@@ -643,6 +611,773 @@
               {
                 "x": 377.5,
                 "y": 758
+              }
+            ],
+            "corner": 8
+          }
+        }
+      },
+      "iv": {
+        "layout": {
+          "aspWash::Contexte": {
+            "x": 16,
+            "y": 16,
+            "parentKey": null,
+            "w": 1299,
+            "h": 668
+          },
+          "aspWash::Contexte::responsableProduction": {
+            "x": 22,
+            "y": 48,
+            "parentKey": "aspWash::Contexte",
+            "collapsedW": 320,
+            "collapsedH": 58
+          },
+          "aspWash::Contexte::operateurUsager": {
+            "x": 35.5,
+            "y": 138,
+            "parentKey": "aspWash::Contexte",
+            "collapsedW": 293,
+            "collapsedH": 58
+          },
+          "aspWash::Contexte::responsableMaintenance": {
+            "x": 22,
+            "y": 228,
+            "parentKey": "aspWash::Contexte",
+            "collapsedW": 320,
+            "collapsedH": 58
+          },
+          "aspWash::Contexte::reseauAlerte": {
+            "x": 1072,
+            "y": 318,
+            "parentKey": "aspWash::Contexte",
+            "collapsedW": 205,
+            "collapsedH": 58
+          },
+          "aspWash::Contexte::robot": {
+            "x": 803,
+            "y": 318,
+            "parentKey": "aspWash::Contexte",
+            "collapsedW": 168,
+            "collapsedH": 58
+          },
+          "aspWash::Contexte::reseauElectrique": {
+            "x": 98,
+            "y": 318,
+            "parentKey": "aspWash::Contexte",
+            "collapsedW": 168,
+            "collapsedH": 58
+          },
+          "aspWash::Contexte::stationRecharge": {
+            "x": 485,
+            "y": 318,
+            "parentKey": "aspWash::Contexte",
+            "collapsedW": 246,
+            "collapsedH": 58
+          },
+          "aspWash::Contexte::dechet": {
+            "x": 93.05390493500889,
+            "y": 408,
+            "parentKey": "aspWash::Contexte",
+            "collapsedW": 171,
+            "collapsedH": 58,
+            "placedByHand": true
+          },
+          "aspWash::Contexte::obstacle": {
+            "x": 83,
+            "y": 498,
+            "parentKey": "aspWash::Contexte",
+            "collapsedW": 198,
+            "collapsedH": 58
+          },
+          "aspWash::Contexte::benneDechets": {
+            "x": 1072,
+            "y": 408,
+            "parentKey": "aspWash::Contexte",
+            "collapsedW": 205,
+            "collapsedH": 58
+          },
+          "aspWash::Contexte::solIndustriel": {
+            "x": 1090.5,
+            "y": 498,
+            "parentKey": "aspWash::Contexte",
+            "collapsedW": 168,
+            "collapsedH": 58
+          },
+          "aspWash::Contexte::zoneInaccessible": {
+            "x": 1090.5,
+            "y": 588,
+            "parentKey": "aspWash::Contexte",
+            "collapsedW": 168,
+            "collapsedH": 58
+          },
+          "aspWash::Contexte::pointEau": {
+            "x": 98,
+            "y": 588,
+            "parentKey": "aspWash::Contexte",
+            "collapsedW": 168,
+            "collapsedH": 58
+          }
+        },
+        "ports": {},
+        "edgeRoutes": {},
+        "edgeAnchors": {},
+        "edgeGeometry": {
+          "connect:aspWash::Contexte::robot->aspWash::Contexte::stationRecharge": {
+            "sourceHandle": "left",
+            "targetHandle": "right",
+            "path": "M 819,363 L 747,363",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 819,
+              "y": 363
+            },
+            "targetPoint": {
+              "x": 747,
+              "y": 363
+            },
+            "label": {
+              "x": 783,
+              "y": 363
+            },
+            "points": [
+              {
+                "x": 819,
+                "y": 363
+              },
+              {
+                "x": 747,
+                "y": 363
+              }
+            ],
+            "corner": 8
+          },
+          "flow:aspWash::Contexte::responsableProduction->aspWash::Contexte::robot:parametre": {
+            "caption": {
+              "x": 545.5,
+              "y": 84,
+              "width": 76,
+              "height": 18,
+              "lines": [
+                "parametre"
+              ],
+              "text": "parametre",
+              "source": {
+                "x": 358,
+                "y": 93
+              },
+              "target": {
+                "x": 819,
+                "y": 341.25
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "left:0.125",
+            "path": "M 358,93 L 801,93 Q 809,93 809,101 L 809,336.25 Q 809,341.25 814,341.25 L 819,341.25",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 358,
+              "y": 93
+            },
+            "targetPoint": {
+              "x": 819,
+              "y": 341.25
+            },
+            "label": {
+              "x": 583.5,
+              "y": 93
+            },
+            "points": [
+              {
+                "x": 358,
+                "y": 93
+              },
+              {
+                "x": 809,
+                "y": 93
+              },
+              {
+                "x": 809,
+                "y": 341.25
+              },
+              {
+                "x": 819,
+                "y": 341.25
+              }
+            ],
+            "corner": 8
+          },
+          "flow:aspWash::Contexte::responsableMaintenance->aspWash::Contexte::robot:entretient": {
+            "caption": {
+              "x": 526.5,
+              "y": 264,
+              "width": 82,
+              "height": 18,
+              "lines": [
+                "entretient"
+              ],
+              "text": "entretient",
+              "source": {
+                "x": 358,
+                "y": 273
+              },
+              "target": {
+                "x": 819,
+                "y": 355.75
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "left:0.375",
+            "path": "M 358,273 L 769,273 Q 777,273 777,281 L 777,347.75 Q 777,355.75 785,355.75 L 819,355.75",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 358,
+              "y": 273
+            },
+            "targetPoint": {
+              "x": 819,
+              "y": 355.75
+            },
+            "label": {
+              "x": 567.5,
+              "y": 273
+            },
+            "points": [
+              {
+                "x": 358,
+                "y": 273
+              },
+              {
+                "x": 777,
+                "y": 273
+              },
+              {
+                "x": 777,
+                "y": 355.75
+              },
+              {
+                "x": 819,
+                "y": 355.75
+              }
+            ],
+            "corner": 8
+          },
+          "flow:aspWash::Contexte::operateurUsager->aspWash::Contexte::robot:cohabite": {
+            "caption": {
+              "x": 533.75,
+              "y": 174,
+              "width": 70,
+              "height": 18,
+              "lines": [
+                "cohabite"
+              ],
+              "text": "cohabite",
+              "source": {
+                "x": 344.5,
+                "y": 183
+              },
+              "target": {
+                "x": 819,
+                "y": 348.5
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "left:0.250",
+            "path": "M 344.5,183 L 785,183 Q 793,183 793,191 L 793,340.5 Q 793,348.5 801,348.5 L 819,348.5",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 344.5,
+              "y": 183
+            },
+            "targetPoint": {
+              "x": 819,
+              "y": 348.5
+            },
+            "label": {
+              "x": 568.75,
+              "y": 183
+            },
+            "points": [
+              {
+                "x": 344.5,
+                "y": 183
+              },
+              {
+                "x": 793,
+                "y": 183
+              },
+              {
+                "x": 793,
+                "y": 348.5
+              },
+              {
+                "x": 819,
+                "y": 348.5
+              }
+            ],
+            "corner": 8
+          },
+          "flow:aspWash::Contexte::robot->aspWash::Contexte::reseauAlerte:alerte": {
+            "caption": {
+              "x": 988,
+              "y": 339.5,
+              "width": 58,
+              "height": 18,
+              "lines": [
+                "alerte"
+              ],
+              "text": "alerte",
+              "source": {
+                "x": 987,
+                "y": 348.5
+              },
+              "target": {
+                "x": 1088,
+                "y": 363
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 1
+            },
+            "sourceHandle": "right:0.250",
+            "targetHandle": "left",
+            "path": "M 987,348.5 L 1018.25,348.5 Q 1025.5,348.5 1025.5,355.75 L 1025.5,355.75 Q 1025.5,363 1032.75,363 L 1088,363",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 987,
+              "y": 348.5
+            },
+            "targetPoint": {
+              "x": 1088,
+              "y": 363
+            },
+            "label": {
+              "x": 1056.75,
+              "y": 363
+            },
+            "points": [
+              {
+                "x": 987,
+                "y": 348.5
+              },
+              {
+                "x": 1025.5,
+                "y": 348.5
+              },
+              {
+                "x": 1025.5,
+                "y": 363
+              },
+              {
+                "x": 1088,
+                "y": 363
+              }
+            ],
+            "corner": 8
+          },
+          "flow:aspWash::Contexte::reseauElectrique->aspWash::Contexte::stationRecharge:alimente": {
+            "caption": {
+              "x": 356.5,
+              "y": 354,
+              "width": 70,
+              "height": 18,
+              "lines": [
+                "alimente"
+              ],
+              "text": "alimente",
+              "source": {
+                "x": 282,
+                "y": 363
+              },
+              "target": {
+                "x": 501,
+                "y": 363
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "left",
+            "path": "M 282,363 L 501,363",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 282,
+              "y": 363
+            },
+            "targetPoint": {
+              "x": 501,
+              "y": 363
+            },
+            "label": {
+              "x": 391.5,
+              "y": 363
+            },
+            "points": [
+              {
+                "x": 282,
+                "y": 363
+              },
+              {
+                "x": 501,
+                "y": 363
+              }
+            ],
+            "corner": 8
+          },
+          "flow:aspWash::Contexte::dechet->aspWash::Contexte::robot:detecte": {
+            "caption": {
+              "x": 496.52695246750443,
+              "y": 444,
+              "width": 64,
+              "height": 18,
+              "lines": [
+                "detecte"
+              ],
+              "text": "detecte",
+              "source": {
+                "x": 280.05390493500886,
+                "y": 453
+              },
+              "target": {
+                "x": 819,
+                "y": 370.25
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "left:0.625",
+            "path": "M 280.054,453 L 769,453 Q 777,453 777,445 L 777,378.25 Q 777,370.25 785,370.25 L 819,370.25",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 280.05390493500886,
+              "y": 453
+            },
+            "targetPoint": {
+              "x": 819,
+              "y": 370.25
+            },
+            "label": {
+              "x": 528.5269524675044,
+              "y": 453
+            },
+            "points": [
+              {
+                "x": 280.05390493500886,
+                "y": 453
+              },
+              {
+                "x": 777,
+                "y": 453
+              },
+              {
+                "x": 777,
+                "y": 370.25
+              },
+              {
+                "x": 819,
+                "y": 370.25
+              }
+            ],
+            "corner": 8
+          },
+          "flow:aspWash::Contexte::obstacle->aspWash::Contexte::robot:detecte": {
+            "caption": {
+              "x": 515,
+              "y": 534,
+              "width": 64,
+              "height": 18,
+              "lines": [
+                "detecte"
+              ],
+              "text": "detecte",
+              "source": {
+                "x": 297,
+                "y": 543
+              },
+              "target": {
+                "x": 819,
+                "y": 377.5
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "left:0.750",
+            "path": "M 297,543 L 789,543 Q 797,543 797,535 L 797,385.5 Q 797,377.5 805,377.5 L 819,377.5",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 297,
+              "y": 543
+            },
+            "targetPoint": {
+              "x": 819,
+              "y": 377.5
+            },
+            "label": {
+              "x": 547,
+              "y": 543
+            },
+            "points": [
+              {
+                "x": 297,
+                "y": 543
+              },
+              {
+                "x": 797,
+                "y": 543
+              },
+              {
+                "x": 797,
+                "y": 377.5
+              },
+              {
+                "x": 819,
+                "y": 377.5
+              }
+            ],
+            "corner": 8
+          },
+          "flow:aspWash::Contexte::robot->aspWash::Contexte::benneDechets:vide": {
+            "caption": {
+              "x": 1030.5330264905097,
+              "y": 444,
+              "width": 45,
+              "height": 18,
+              "lines": [
+                "vide"
+              ],
+              "text": "vide",
+              "source": {
+                "x": 987,
+                "y": 363
+              },
+              "target": {
+                "x": 1088,
+                "y": 453
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 1
+            },
+            "sourceHandle": "right",
+            "targetHandle": "left",
+            "path": "M 987,363 L 1033.5,363 Q 1041.5,363 1041.5,371 L 1041.5,445 Q 1041.5,453 1049.5,453 L 1088,453",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 987,
+              "y": 363
+            },
+            "targetPoint": {
+              "x": 1088,
+              "y": 453
+            },
+            "label": {
+              "x": 1041.5,
+              "y": 408
+            },
+            "points": [
+              {
+                "x": 987,
+                "y": 363
+              },
+              {
+                "x": 1041.5,
+                "y": 363
+              },
+              {
+                "x": 1041.5,
+                "y": 453
+              },
+              {
+                "x": 1088,
+                "y": 453
+              }
+            ],
+            "corner": 8
+          },
+          "flow:aspWash::Contexte::robot->aspWash::Contexte::solIndustriel:nettoie": {
+            "caption": {
+              "x": 993.5,
+              "y": 471.0165132452548,
+              "width": 64,
+              "height": 18,
+              "lines": [
+                "nettoie"
+              ],
+              "text": "nettoie",
+              "source": {
+                "x": 987,
+                "y": 377.5
+              },
+              "target": {
+                "x": 1106.5,
+                "y": 543
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 1
+            },
+            "sourceHandle": "right:0.750",
+            "targetHandle": "left",
+            "path": "M 987,377.5 L 1017.5,377.5 Q 1025.5,377.5 1025.5,385.5 L 1025.5,535 Q 1025.5,543 1033.5,543 L 1106.5,543",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 987,
+              "y": 377.5
+            },
+            "targetPoint": {
+              "x": 1106.5,
+              "y": 543
+            },
+            "label": {
+              "x": 1025.5,
+              "y": 460.25
+            },
+            "points": [
+              {
+                "x": 987,
+                "y": 377.5
+              },
+              {
+                "x": 1025.5,
+                "y": 377.5
+              },
+              {
+                "x": 1025.5,
+                "y": 543
+              },
+              {
+                "x": 1106.5,
+                "y": 543
+              }
+            ],
+            "corner": 8
+          },
+          "flow:aspWash::Contexte::robot->aspWash::Contexte::zoneInaccessible:nettoie": {
+            "caption": {
+              "x": 1025.5,
+              "y": 546.7665132452548,
+              "width": 64,
+              "height": 18,
+              "lines": [
+                "nettoie"
+              ],
+              "text": "nettoie",
+              "source": {
+                "x": 987,
+                "y": 341.25
+              },
+              "target": {
+                "x": 1106.5,
+                "y": 633
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right:0.125",
+            "targetHandle": "left",
+            "path": "M 987,341.25 L 1049.5,341.25 Q 1057.5,341.25 1057.5,349.25 L 1057.5,625 Q 1057.5,633 1065.5,633 L 1106.5,633",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 987,
+              "y": 341.25
+            },
+            "targetPoint": {
+              "x": 1106.5,
+              "y": 633
+            },
+            "label": {
+              "x": 1057.5,
+              "y": 487.125
+            },
+            "points": [
+              {
+                "x": 987,
+                "y": 341.25
+              },
+              {
+                "x": 1057.5,
+                "y": 341.25
+              },
+              {
+                "x": 1057.5,
+                "y": 633
+              },
+              {
+                "x": 1106.5,
+                "y": 633
+              }
+            ],
+            "corner": 8
+          },
+          "flow:aspWash::Contexte::pointEau->aspWash::Contexte::robot:approvisionne": {
+            "caption": {
+              "x": 497,
+              "y": 624,
+              "width": 101,
+              "height": 18,
+              "lines": [
+                "approvisionne"
+              ],
+              "text": "approvisionne",
+              "source": {
+                "x": 282,
+                "y": 633
+              },
+              "target": {
+                "x": 819,
+                "y": 384.75
+              },
+              "lineStyle": "orthogonal",
+              "conflicts": 0,
+              "crossings": 0
+            },
+            "sourceHandle": "right",
+            "targetHandle": "left:0.875",
+            "path": "M 282,633 L 805,633 Q 813,633 813,625 L 813,387.75 Q 813,384.75 816,384.75 L 819,384.75",
+            "lineStyle": "orthogonal",
+            "sourcePoint": {
+              "x": 282,
+              "y": 633
+            },
+            "targetPoint": {
+              "x": 819,
+              "y": 384.75
+            },
+            "label": {
+              "x": 547.5,
+              "y": 633
+            },
+            "points": [
+              {
+                "x": 282,
+                "y": 633
+              },
+              {
+                "x": 813,
+                "y": 633
+              },
+              {
+                "x": 813,
+                "y": 384.75
+              },
+              {
+                "x": 819,
+                "y": 384.75
               }
             ],
             "corner": 8
