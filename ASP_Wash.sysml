@@ -65,6 +65,90 @@ package aspWash {
         flow approvisionne from pointEau to robot;
         connect robot to stationRecharge;
     }
+    package requirements {
+        /* exigences extraites des cas d'utilisation */
+        requirement reconnaissanceDechets specializes fonctions {
+            doc /* le robot doit pouvoir reconnaitre les dechets et choisir le mode de nettoyage adapte */
+        }
 
+        requirement signalementDechetInhabituel specializes fonctions {
+            doc /* le robot doit signaler au responsable production tout dechet inhabituel */
+        }
+
+        requirement detectionObstaclesUsagers specializes fonctions {
+            doc /* le robot doit detecter les obstacles et les usagers et ralentir, contourner ou s'arreter */
+        }
+
+        requirement nettoyageZoneInaccessible specializes fonctions {
+            doc /* le robot doit pouvoir nettoyer une zone inaccessible en deployant puis recuperant un satellite */
+        }
+
+        requirement alarmeIntervention specializes fonctions {
+            doc /* le robot doit declencher une alarme et localiser l'incident pour permettre une intervention au sol */
+        }
+
+        /* exigences extraites de la description du produit */
+        requirement autonomie specializes contraintes {
+            doc /* le robot doit fonctionner au moins 4 h entre deux recharges */
+        }
+
+        requirement vitesseProximite specializes contraintes {
+            doc /* a proximite d'une personne, la vitesse du robot doit etre inferieure a 0,3 m/s */
+        }
+
+        requirement arretUrgence specializes contraintes {
+            doc /* le robot doit disposer d'un arret d'urgence accessible et visible */
+        }
+
+        requirement signalisationPresence specializes contraintes {
+            doc /* le robot doit signaler sa presence par un signal lumineux et sonore */
+        }
+
+        requirement protectionEnvironnement specializes contraintes {
+            doc /* le robot doit resister a la poussiere et aux projections d'eau (IP54 minimum) */
+        }
+
+        requirement maintenabilite specializes contraintes {
+            doc /* les consommables (brosses, filtres, reservoirs) doivent etre accessibles sans outillage specifique */
+        }
+
+        /* exigences extraites des interactions avec les elements de contexte */
+        requirement communicationReseauAlerte specializes interactionsMaterielles {
+            doc /* le robot doit communiquer sans fil avec le reseau d'alerte du site */
+        }
+
+        requirement rechargeAutonome specializes interactionsMaterielles {
+            doc /* le robot doit rejoindre seul sa station de recharge */
+        }
+
+        requirement compatibiliteElectrique specializes interactionsMaterielles {
+            doc /* la station de recharge doit etre compatible avec le reseau electrique du site */
+        }
+
+        requirement approvisionnementEau specializes interactionsMaterielles {
+            doc /* le robot doit pouvoir etre rempli en eau a partir d'un point d'eau du site */
+        }
+
+        requirement vidageDechets specializes interactionsMaterielles {
+            doc /* le robot doit pouvoir vider ses dechets dans une benne */
+        }
+
+        /* exigences creees pour regrouper l'ensemble de maniere hierarchique */
+        requirement contraintes specializes specificationsASPWash {
+            doc /* le systeme doit respecter les contraintes ci-dessous */
+        }
+
+        requirement fonctions specializes specificationsASPWash {
+            doc /* le systeme doit comprendre les fonctions listees ci-dessous */
+        }
+
+        requirement interactionsMaterielles specializes specificationsASPWash {
+            doc /* le systeme doit pouvoir disposer des interactions materielles listees */
+        }
+
+        requirement specificationsASPWash {
+            doc /* le systeme repond aux categories d'exigences listees ci-dessous */
+        }
+    }
 }
 
