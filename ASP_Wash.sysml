@@ -36,4 +36,35 @@ package aspWash {
             ref actor reseauAlerte;
         }
     }
+    part def Contexte {
+        part responsableProduction: ResponsableProduction;
+        part operateurUsager: OperateurUsager[*];
+        part responsableMaintenance: ResponsableMaintenance;
+        part reseauAlerte: ReseauAlerte;
+        part robot: AspWashRA1;
+        part reseauElectrique;
+        part stationRecharge: StationRecharge;
+        part dechet: Dechet[*];
+        part obstacle: Obstacle[*];
+        part benneDechets: BenneDechets;
+        part solIndustriel;
+        part zoneInaccessible;
+        part pointEau;
+
+        flow parametre from responsableProduction to robot;
+        flow entretient from responsableMaintenance to robot;
+        flow cohabite from operateurUsager to robot;
+        flow alerte from robot to reseauAlerte;
+        flow alimente from reseauElectrique to stationRecharge;
+        flow recharge from stationRecharge to robot;
+        flow detecte from dechet to robot;
+        flow detecte from obstacle to robot;
+        flow vide from robot to benneDechets;
+        flow nettoie from robot to solIndustriel;
+        flow nettoie from robot to zoneInaccessible;
+        flow approvisionne from pointEau to robot;
+        connect robot to stationRecharge;
+    }
+
 }
+
