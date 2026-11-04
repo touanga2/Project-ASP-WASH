@@ -1,0 +1,16 @@
+
+action vueAction {
+    action detecterZone;
+    action deployerRobot;
+    action nettoyerZone;
+    action signalerProbleme;
+    action retourBase;
+
+    first detecterZone;
+    then deployerRobot;
+    then nettoyerZone;
+    then signalerProbleme;
+    then retourBase;
+    then done;
+}
+
