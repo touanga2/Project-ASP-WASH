@@ -8,6 +8,7 @@ action vueAction {
     first detecterZone;
     then deployerRobot;
     then nettoyerZone;
+    then merge signalerProbleme?;
     then retourBase
     then done;
 }
