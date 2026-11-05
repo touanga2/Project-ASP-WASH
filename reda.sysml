@@ -1,5 +1,4 @@
 
-
 action vueAction {
     action detecterZone;
     action deployerRobot;
@@ -10,8 +9,9 @@ action vueAction {
     first detecterZone;
     then deployerRobot;
     then nettoyerZone;
-    then signalerProbleme;
-    then retourBase;
+
+        if problemeVraie then signalerProbleme ;
+        if problemeFaux then retourBase;
     then done;
 }
 
