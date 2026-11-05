@@ -21,6 +21,25 @@ action vueAction {
     
 }
 
+
+part sequence {
+
+    part RobotAspirateur;
+    part ZoneAnettoyer;
+    part miniRobot;
+    part BaseRobotAspirateur
+
+    message detecterZone from RobotAspirateur to ZoneAnettoyer;
+
+    message verifierAccessibilite from RobotAspirateur to ZoneAnettoyer;
+
+    message deployerRobot from RobotAspirateur to miniRobot;
+
+    message nettoyerZone from miniRobot to ZoneAnettoyer;
+
+    message retourBase from miniRobot to BaseRobotAspirateur;
+}
+
             
 
 
