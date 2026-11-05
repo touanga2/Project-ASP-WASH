@@ -3,16 +3,13 @@ package aspWash {
     private import ScalarValues::Boolean;
 
     package parts {
-        /* acteurs */
         part def ResponsableProduction;
         part def OperateurUsager;
         part def ResponsableMaintenance;
         part def ReseauAlerte;
 
-        /* systeme */
         part def AspWashRA1;
 
-        /* composants du robot */
         part def Capteur;
         part def Controleur;
         part def Motorisation;
@@ -26,7 +23,6 @@ package aspWash {
         part def Chassis;
         part def MiniRobot;
 
-        /* elements du contexte */
         part def StationRecharge;
         part def Dechet;
         part def Obstacle;
@@ -92,7 +88,6 @@ package aspWash {
     }
 
     package requirements {
-        /* exigences extraites des cas d'utilisation */
         requirement reconnaissanceDechets specializes fonctions {
             doc /* le robot doit pouvoir reconnaitre les dechets et choisir le mode de nettoyage adapte */
         }
@@ -113,7 +108,6 @@ package aspWash {
             doc /* le robot doit declencher une alarme et localiser l'incident pour permettre une intervention au sol */
         }
 
-        /* exigences extraites de la description du produit */
         requirement autonomie specializes contraintes {
             doc /* le robot doit fonctionner au moins 4 h entre deux recharges */
         }
@@ -138,7 +132,6 @@ package aspWash {
             doc /* les consommables (brosses, filtres, reservoirs) doivent etre accessibles sans outillage specifique */
         }
 
-        /* exigences extraites des interactions avec les elements de contexte */
         requirement communicationReseauAlerte specializes interactionsMaterielles {
             doc /* le robot doit communiquer sans fil avec le reseau d'alerte du site */
         }
@@ -159,7 +152,6 @@ package aspWash {
             doc /* le robot doit pouvoir vider ses dechets dans une benne */
         }
 
-        /* exigences creees pour regrouper l'ensemble de maniere hierarchique */
         requirement contraintes specializes specificationsASPWash {
             doc /* le systeme doit respecter les contraintes ci-dessous */
         }
@@ -177,33 +169,29 @@ package aspWash {
         }
     }
 
-    /* decomposition 1 : reconnaitre les dechets */
-
     action reconnaitreDechets {
         attribute finMission : Boolean;
         attribute dechetDetecte : Boolean;
         attribute dechetReconnu : Boolean;
 
-        action scannerSol;
-        action analyserDechet;
-        action nettoyerDechet;
-        action signalerDechetInhabituel;
-
         first start;
         then merge boucle;
-        then scannerSol;
+        then action scannerSol;
         then decide detection;
             if finMission then done;
             if dechetDetecte then analyserDechet;
             else boucle;
 
-        first analyserDechet;
+        action analyserDechet;
         then decide tri;
             if dechetReconnu then nettoyerDechet;
             else signalerDechetInhabituel;
 
-        first nettoyerDechet then boucle;
-        first signalerDechetInhabituel then boucle;
+        action nettoyerDechet;
+        then boucle;
+
+        action signalerDechetInhabituel;
+        then boucle;
     }
 
     part scenarioDechetReconnu {
@@ -225,23 +213,21 @@ package aspWash {
         message alerteInhabituel from controleur to operateur;
     }
 
-    /* decomposition 2 : nettoyer une zone inaccessible */
-
     action vueAction {
-        action detecterZone;
-        action DeployerRobot;
-        action NettoyerZone;
-        action RetourBase;
-        decide decisionZone;
+        attribute zoneInaccessible : Boolean;
 
         first start;
-        then detecterZone;
-        then decisionZone;
-        if zoneInaccessible then DeployerRobot;
-        if not zoneInaccessible then NettoyerZone;
-        succession DeployerRobot then RetourBase;
-        succession NettoyerZone then done;
-        succession RetourBase then done;
+        then action detecterZone;
+        then decide decisionZone;
+            if zoneInaccessible then DeployerRobot;
+            else NettoyerZone;
+
+        action DeployerRobot;
+        then action RetourBase;
+        then done;
+
+        action NettoyerZone;
+        then done;
     }
 
     part sequence {
@@ -257,40 +243,35 @@ package aspWash {
         message retourBase from miniRobot to BaseRobotAspirateur;
     }
 
-    /* decomposition 3 : detecter obstacles */
-
     action detecterObstacles {
         attribute finMission : Boolean;
         attribute obstacleDetecte : Boolean;
         attribute contactImminent : Boolean;
         attribute passageBloque : Boolean;
 
-        action scannerTrajectoire;
-        action classifierObstacle;
-        action ralentir;
-        action arreter;
-        action contourner;
-        action recalculerItineraire;
-
         first start;
         then merge boucle;
-        then scannerTrajectoire;
+        then action scannerTrajectoire;
         then decide detection;
             if finMission then done;
             if obstacleDetecte then classifierObstacle;
             else boucle;
 
-        first classifierObstacle then ralentir;
-
-        first ralentir;
+        action classifierObstacle;
+        then action ralentir;
         then decide risque;
             if contactImminent then arreter;
             if passageBloque then recalculerItineraire;
             else contourner;
 
-        first arreter then boucle;
-        first contourner then boucle;
-        first recalculerItineraire then boucle;
+        action arreter;
+        then boucle;
+
+        action contourner;
+        then boucle;
+
+        action recalculerItineraire;
+        then boucle;
     }
 
     part scenarioObstacleArret {
@@ -314,8 +295,6 @@ package aspWash {
         message ordreRalentir from controleur to motorisation;
         message ordreContournement from controleur to motorisation;
     }
-
-    /* decomposition 4 : alarme et intervention au sol */
 
     action alarmeInterventionSol {
         attribute finMission : Boolean;
@@ -357,8 +336,6 @@ package aspWash {
         message demanderIntervention from reseauAlerte.envoiOrdre to responsableMaintenance.receptionOrdre;
         message intervenirAuSol from responsableMaintenance.intervention to robot.finIntervention;
     }
-
-    /* seance 3 : vue generale et interconnexion */
 
     part def Architecture {
         part robot: AspWashRA1 {
@@ -402,8 +379,6 @@ package aspWash {
 
     part archi: Architecture;
 
-    /* seance 3 : matrice d'allocation */
-
     allocate reconnaitreDechets.scannerSol to archi.robot.capteur;
     allocate reconnaitreDechets.analyserDechet to archi.robot.controleur;
     allocate reconnaitreDechets.nettoyerDechet to archi.robot.moduleNettoyage;
@@ -426,7 +401,7 @@ package aspWash {
     allocate alarmeInterventionSol.localiserIncident to archi.robot.controleur;
     allocate alarmeInterventionSol.attendreIntervention to archi.robot.controleur;
 
-    /* seance 3 : verification des exigences */
+    private import requirements::*;
 
     satisfy reconnaissanceDechets by archi.robot.capteur;
     satisfy reconnaissanceDechets by archi.robot.controleur;
